@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s;
+}
+
+#title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 20px 0;
+    /* Reduce space around the title */
+}
+
+#emoji {
+    width: 150px;
+    /* Adjust the size of your image as needed */
+    margin: 20px 0;
+    /* Adjust space around the image */
+    transition: opacity 0.5s;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    background: #d3d3d3;
+    border-radius: 45px;
+    outline: none;
+    margin: 20px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    /* Ancho reducido para que sea más delgado */
+    height: 30px;
+    /* Altura reducida para que sea más delgado */
+    border-radius: 50%;
+    /* Esto hará que la bola sea perfectamente circular */
+    background: #1271df;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 30px;
+    /* Ancho reducido para que sea más delgado */
+    height: 30px;
+    /* Altura reducida para que sea más delgado */
+    border-radius: 50%;
+    /* Esto hará que la bola sea perfectamente circular */
+    background: #1271df;
+    cursor: pointer;
+}
+
+
+/* Estilos para dispositivos con un ancho de hasta 600px */
+@media (max-width: 600px) {
+    .slider {
+        width: 90%;
+        /* Hace que el slider ocupe el 75% del ancho de la pantalla en dispositivos móviles */
+    }
+}
+
+
+#title {
+    font-family: "agenda", sans-serif;
+    font-weight: 300;
+    font-size: xx-large;
+    font-style: normal;
+}
+
+/* Estilos para el botón de compartir */
+#shareButton {
+    padding: 10px 20px;
+    margin-top: 20px; /* Espacio por encima del botón */
+    font-size: 1rem;
+    color: white;
+    background-color: #1271df;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #shareButton:hover {
+    background-color: #0a5bbd;
+  }
+  
